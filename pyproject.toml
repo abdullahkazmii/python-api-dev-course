@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-dev"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.114.1"}
+uvicorn = "^0.30.6"
+psycopg2 = "^2.9.9"
+sqlalchemy = "1.4.23"
+sqlalchemy2-stubs = "^0.0.2a38"
+passlib = "^1.7.4"
+bcrypt = "^4.2.0"
+pyjwt = "^2.9.0"
+python-jose = "^3.3.0"
+pydantic-settings = "^2.5.2"
+alembic = "^1.13.3"
+
+
+[tool.poetry.group.dev.dependencies]
+types-passlib = "^1.7.7.20240819"
+types-python-jose = "^3.3.4.20240106"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
